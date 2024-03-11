@@ -1,6 +1,6 @@
 {
   "name": "format-cpf-cnpj-liber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/CpfCnpjField.js",
   "scripts": {
