@@ -16,7 +16,9 @@ export const CpfCnpjField: React.FC<Props> = ({
   helperText,
 }) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const formattedValue = formatCpfCnpj(event.target.value);
+    const rawValue = event.target.value.replace(/\D/g, '');
+    if (rawValue.length > 14) return;
+    const formattedValue = formatCpfCnpj(rawValue);
     onChange(formattedValue);
   };
 
@@ -28,6 +30,7 @@ export const CpfCnpjField: React.FC<Props> = ({
       placeholder='CPF/CNPJ'
       error={error}
       helperText={helperText}
+      inputProps={{ maxLength: 18 }}
     />
   );
 };
