@@ -7,7 +7,7 @@ Esta biblioteca fornece um componente de campo de entrada para CPF/CNPJ, utiliza
 Para instalar esta biblioteca, você pode usar o npm ou yarn:
 
 ```bash
-npm install --save  format-cpf-cnpj
+npm install --save  format-cpf-cnpj-liber
 ```
 ou
 ```bash
