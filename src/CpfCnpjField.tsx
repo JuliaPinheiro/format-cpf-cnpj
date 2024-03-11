@@ -1,7 +1,7 @@
 import React from 'react';
-import { TextField } from '@material-ui/core';
 import { formatCpfCnpj } from './formatCpfCnpj';
 import { Props } from './types';
+import { TextField } from '@mui/material';
 
 export const CpfCnpjField: React.FC<Props> = ({
   value,
