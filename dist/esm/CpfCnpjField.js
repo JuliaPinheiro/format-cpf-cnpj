@@ -1,6 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import { TextField } from '@material-ui/core';
 import { formatCpfCnpj } from './formatCpfCnpj';
+import { TextField } from '@mui/material';
 export var CpfCnpjField = function (_a) {
     var value = _a.value, onChange = _a.onChange, error = _a.error, helperText = _a.helperText;
     var handleChange = function (event) {
