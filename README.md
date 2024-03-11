@@ -11,7 +11,7 @@ npm install --save  format-cpf-cnpj-liber
 ```
 ou
 ```bash
-yarn add format-cpf-cnpj
+yarn add format-cpf-cnpj-liber
 ```
 
 ## Uso
