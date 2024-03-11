@@ -1,13 +1,7 @@
 import React from 'react';
 import { TextField } from '@material-ui/core';
 import { formatCpfCnpj } from './formatCpfCnpj';
-
-interface Props {
-  value: string;
-  onChange: (value: string) => void;
-  error?: boolean;
-  helperText?: string;
-}
+import { Props } from './types';
 
 export const CpfCnpjField: React.FC<Props> = ({
   value,
