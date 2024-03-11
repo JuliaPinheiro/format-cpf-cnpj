@@ -1,6 +1,7 @@
-export function formatCpfCnpj(value: string) {
-  const onlyNums = value.replace(/[^\d]/g, '');
+export function formatCpfCnpj(value?: string) {
 
+if (!value) return '';
+  const onlyNums = value.replace(/[^\d]/g, '');
   if (onlyNums.length <= 11) {
     return onlyNums.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
   } else {
