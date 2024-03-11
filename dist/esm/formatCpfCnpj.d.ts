@@ -1,1 +1,1 @@
-export declare function formatCpfCnpj(value: string): string;
+export declare function formatCpfCnpj(value?: string): string;
