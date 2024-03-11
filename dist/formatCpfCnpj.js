@@ -1,12 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.formatCpfCnpj = void 0;
-var formatCpfCnpj = function (value) {
-    var cleanValue = value.replace(/\D/g, "");
-    if (cleanValue.length <= 11) {
-        return cleanValue.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+function formatCpfCnpj(value) {
+    var onlyNums = value.replace(/[^\d]/g, '');
+    if (onlyNums.length <= 11) {
+        return onlyNums.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
     }
-    return cleanValue.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, "$1.$2.$3/$4-$5");
-};
+    else {
+        return onlyNums.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
+    }
+}
 exports.formatCpfCnpj = formatCpfCnpj;
 //# sourceMappingURL=formatCpfCnpj.js.map

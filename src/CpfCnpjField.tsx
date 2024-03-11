@@ -34,3 +34,5 @@ export const CpfCnpjField: React.FC<Props> = ({
     />
   );
 };
+
+export { formatCpfCnpj };
